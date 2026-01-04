@@ -49,6 +49,7 @@ Task-based abstractions for common activities:
 ## 📚 Documentation
 
 - [Development Roadmap](ROADMAP.md) - Detailed development phases and milestones
+- [Darkness Edition Development Guide](DARKNESS_EDITION_GUIDE.md) - Comprehensive instructions for AI agents and contributors
 - [API Documentation](runelite-client/src/main/java/net/runelite/client/plugins/microbot/api/QUERYABLE_API.md) - Queryable API reference
 - [Agent Guide](AGENTS.md) - Instructions for AI coding assistants
 

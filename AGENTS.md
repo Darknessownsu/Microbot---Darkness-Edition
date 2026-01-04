@@ -1,5 +1,18 @@
 # Microbot API Guide (for Claude)
 
+## Darkness Edition Development
+
+**For comprehensive Darkness Edition development instructions, see [DARKNESS_EDITION_GUIDE.md](DARKNESS_EDITION_GUIDE.md)**
+
+This guide covers:
+- Core philosophy and design principles
+- Architecture overview of the four major components
+- Detailed phase-by-phase implementation instructions
+- Code quality standards and testing approaches
+- Security considerations and best practices
+
+All Darkness Edition code should reside in `net.runelite.client.plugins.microbot.darkness` namespace.
+
 ## Scope & Paths
 - Primary plugin code: `runelite-client/src/main/java/net/runelite/client/plugins/microbot`.
 - Queryable API docs: `.../microbot/api/QUERYABLE_API.md`; quick read: `api/README.md`.
