@@ -45,9 +45,17 @@ public class BehaviorProfile {
     private boolean calibrated = false;
 
     /**
-     * Minimum samples required for reliable calibration.
+     * Minimum timing samples required for reliable calibration.
+     * 30 samples provides a statistically meaningful distribution
+     * with reasonable confidence in mean and standard deviation estimates.
      */
     private static final int MIN_TIMING_SAMPLES = 30;
+
+    /**
+     * Minimum mouse movement samples required for reliable calibration.
+     * 50 samples captures sufficient variety in mouse velocity patterns
+     * to generate realistic simulated movements.
+     */
     private static final int MIN_MOUSE_SAMPLES = 50;
 
     // Timing distributions

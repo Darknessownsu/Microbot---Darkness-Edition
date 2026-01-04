@@ -3,11 +3,8 @@ package net.runelite.client.plugins.microbot.darkness.intelligence;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import net.runelite.api.Player;
 import net.runelite.client.plugins.microbot.Microbot;
 import net.runelite.client.plugins.microbot.util.player.Rs2Player;
-
-import java.util.List;
 
 /**
  * Calculates a numerical risk score based on environmental factors.
@@ -30,7 +27,7 @@ import java.util.List;
 @Slf4j
 public class RiskAssessment {
 
-    // Factor weights (should sum to approximately 1.0 for intuitive scoring)
+    // Factor weights (must sum to 1.0 for proper score normalization)
     @Getter @Setter private double playerPresenceWeight = 0.35;
     @Getter @Setter private double repetitiveDurationWeight = 0.25;
     @Getter @Setter private double timeSinceRandomWeight = 0.20;
@@ -97,14 +94,15 @@ public class RiskAssessment {
         }
 
         try {
-            List<Player> nearbyPlayers = Rs2Player.getPlayersInLocalArea();
-            if (nearbyPlayers == null || nearbyPlayers.isEmpty()) {
+            // Use getPlayers with a filter that accepts all players
+            long playerCount = Rs2Player.getPlayers(player -> true).count();
+            if (playerCount == 0) {
                 return 0.0;
             }
 
             // More players = higher risk
-            int playerCount = Math.min(nearbyPlayers.size(), maxNearbyPlayers);
-            return (double) playerCount / maxNearbyPlayers;
+            int clampedCount = (int) Math.min(playerCount, maxNearbyPlayers);
+            return (double) clampedCount / maxNearbyPlayers;
         } catch (Exception e) {
             log.debug("Error calculating player presence score", e);
             return 0.0;
