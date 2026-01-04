@@ -11,18 +11,72 @@
 </a>
 
 
-# Microbot
-This is a **fun side project** inspired by **Old School RuneScape**.  
-The main motivation? To learn, share, and help other people program by building tools, scripts, and experiments around one of the most nostalgic games ever made.  
+# Microbot - Darkness Edition 🌙
 
-Think of it less like “serious enterprise software” and more like a playground where the game is coding itself.  
+**Darkness Edition** is an enhanced fork of Microbot that brings intelligent, adaptive automation to a new level. Built around three foundational principles: **intelligent adaptation** over rigid automation, a **premium dark aesthetic** user experience, and **educational, well-documented code**.
 
-If you’ve ever thought *“what if I could learn programming while messing around with RuneScape?”* — you’re in the right place.  
+## ✨ What Makes Darkness Edition Different
+
+- **Behavioral Profiling System** - Captures and learns from your natural play patterns during a calibration phase, then applies those patterns to automation for more human-like behavior
+- **Intelligence Layer** - Continuously monitors game state and dynamically adjusts script execution based on risk assessment and environmental factors
+- **Enhanced Script API** - High-level abstractions that make script development more accessible while automatically incorporating behavioral variation
+- **Dark Visual Theme** - A cohesive dark aesthetic with purple accents that communicates sophistication and reduces eye strain
+
+## 🚀 Core Features
+
+### Behavioral Profiling
+The system observes user actions during calibration and builds a statistical model of natural behavior patterns including:
+- Mouse movement velocity and acceleration curves
+- Timing distributions between actions
+- Decision-making patterns and common action sequences
+
+### Risk-Aware Intelligence
+Dynamic risk assessment considers:
+- Nearby player presence and behavior
+- Duration of repetitive actions
+- Time since last random behavior
+- Environmental game conditions
+
+Risk responses range from normal operation at low risk to injecting random human-like behaviors at elevated risk levels.
+
+### Premium Script API
+Task-based abstractions for common activities:
+- **GatheringTask** - Resource collection with intelligent banking
+- **CombatTask** - Combat management with survival prioritization
+- **BankingTask** - Reliable inventory management
+- **NavigationTask** - Pathfinding with natural movement
+
+## 📚 Documentation
+
+- [Development Roadmap](ROADMAP.md) - Detailed development phases and milestones
+- [API Documentation](runelite-client/src/main/java/net/runelite/client/plugins/microbot/api/QUERYABLE_API.md) - Queryable API reference
+- [Agent Guide](AGENTS.md) - Instructions for AI coding assistants
+
+## 🔧 Building from Source
+
+\`\`\`bash
+# Clone the repository
+git clone https://github.com/Darknessownsu/Microbot---Darkness-Edition.git
+cd Microbot---Darkness-Edition
+
+# Build the project
+./gradlew :buildAll
+\`\`\`
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our contributing guidelines and ensure your code follows the established patterns in the codebase. All Darkness Edition code should reside in the \`net.runelite.client.plugins.microbot.darkness\` namespace.
+
+## 📖 Learning Resource
+
+This project serves both as a functional tool and a learning resource. The code is designed to be educational with comprehensive documentation explaining not just how to accomplish tasks, but why certain approaches work better than others.
 
 ## Discord
 
 [![Discord Banner 1](https://discord.com/api/guilds/1087718903985221642/widget.png?style=banner1)](https://discord.gg/zaGrfqFEWE)
 
-
 If you have any questions, please join our [Discord](https://discord.gg/zaGrfqFEWE) server.
 
+---
+
+*Darkness Edition - Where intelligent automation meets elegant design.*
