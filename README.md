@@ -48,9 +48,19 @@ Task-based abstractions for common activities:
 
 ## 📚 Documentation
 
-- [Development Roadmap](ROADMAP.md) - Detailed development phases and milestones
-- [API Documentation](runelite-client/src/main/java/net/runelite/client/plugins/microbot/api/QUERYABLE_API.md) - Queryable API reference
-- [Agent Guide](AGENTS.md) - Instructions for AI coding assistants
+### Getting Started
+- **[Getting Started Guide](docs/GETTING_STARTED.md)** - Complete walkthrough from installation to running your first script
+- **[Darkness API Documentation](runelite-client/src/main/java/net/runelite/client/plugins/microbot/darkness/README.md)** - Comprehensive API reference for behavioral profiling and intelligence layer
+
+### Development
+- **[Architecture Overview](docs/ARCHITECTURE.md)** - How Darkness Edition works internally
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute code, documentation, or ideas
+- **[Development Roadmap](ROADMAP.md)** - Development phases and milestones
+- **[Agent Guide](AGENTS.md)** - Instructions for AI coding assistants
+
+### API References
+- [Microbot API Documentation](runelite-client/src/main/java/net/runelite/client/plugins/microbot/api/QUERYABLE_API.md) - Queryable API reference
+- [Darkness API Quick Reference](runelite-client/src/main/java/net/runelite/client/plugins/microbot/darkness/README.md) - Darkness Edition features
 
 ## 🔧 Building from Source
 
@@ -65,7 +75,13 @@ cd Microbot---Darkness-Edition
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our contributing guidelines and ensure your code follows the established patterns in the codebase. All Darkness Edition code should reside in the \`net.runelite.client.plugins.microbot.darkness\` namespace.
+Contributions are welcome! Please read our [Contributing Guide](docs/CONTRIBUTING.md) for:
+- Code style guidelines
+- Development setup instructions
+- Pull request process
+- Testing guidelines
+
+All Darkness Edition code should reside in the `net.runelite.client.plugins.microbot.darkness` namespace.
 
 ## 📖 Learning Resource
 
